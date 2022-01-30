@@ -46,7 +46,7 @@ Style/FrozenStringLiteralComment:
     - 'Gemfile'
     - 'Rakefile'
     - 'bin/console'
-    - 'gitlab-license.gemspec'
+    - 'gitlab-license-plain.gemspec'
     - 'lib/gitlab/license.rb'
     - 'lib/gitlab/license/boundary.rb'
     - 'lib/gitlab/license/encryptor.rb'

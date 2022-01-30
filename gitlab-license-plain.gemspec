@@ -8,18 +8,18 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Satoshi Nakamoto']
   spec.email         = ['satoshi@nakamoto.com']
 
-  spec.summary       = ''
-  spec.homepage      = ''
+  spec.summary       = 'Gitlab Enterprise license'
+  spec.homepage      = 'https://github.com/andreimerfu/gitlab-license-plain'
   spec.license       = 'MIT'
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = Dir['lib/**/*.rb']
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
   spec.required_ruby_version = '>= 2.3.0'
 
-  spec.add_development_dependency 'bundler', '~> 1.9'
+  spec.add_development_dependency 'bundler', '~> 2.3'
   spec.add_development_dependency 'byebug'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.9'
